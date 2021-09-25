@@ -1,0 +1,77 @@
+html{
+    background: linear-gradient(
+        to right,rgb(7, 7, 77),rgb(37, 37, 59),rgb(47, 47, 49)
+    );
+}
+
+
+header, .container, footer{
+    font-family: 'Heebo', sans-serif;
+    color: #fafafa;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.resultado{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3em;
+    align-items: center;
+}
+
+#inputPrecio{
+    width: 10em;
+    font-family: 'Heebo', sans-serif;
+    margin-left: 1em;
+}
+
+#boton{
+    border-radius: 20px;
+    background-color: rgb(223, 223, 203);
+    padding: 0.5em;
+    margin-left: 1em;
+}
+
+#precioFinal{
+    font-weight: bold;
+}
+
+.h2resultado{
+    margin-left: 0.7em;
+}
+
+#parrafoResultado, #parrafoInicial{
+    width: 70%;
+    font-size: 2rem;
+    margin-left: 0.7em;
+}
+
+
+#references{
+    font-size: 1.5rem;
+    margin-left: 0.7em;;
+}
+
+.xd{
+    text-decoration: line-through;
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    background-color:#0d1527 ;
+    padding: 20px;
+    font-size: 13px;
+    font-style: italic;
+    margin-top: 6.3em;
+   
+}
+
+.legales{
+    font-size: 1rem;
+    
+}

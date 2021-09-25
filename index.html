@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap" rel="stylesheet">
+    
+    <title>Calculadora impuestos de steam</title>
+</head>
+<body>
+    <header class="titulo">
+        Calculadora de impuestos de Steam!
+    </header>
+    
+    
+    <div class="container">
+ 
+        
+    <section class="resultado">
+        <h2 class="h2resultado">Ingrese aqui el precio que aparece en steam</h2>
+        
+        <form>
+            <p><input id="inputPrecio" type="number" max="6" placeholder="Precio">
+            <button id="boton">Calcular</button></p>
+        </form>
+        
+        <p id="parrafoInicial">Valor Steam: <span id="precioInicial"></span>$</p>
+        <p id="parrafoResultado">El precio con impuestos es de: <span id="precioFinal"></span>$</p>
+    </section>
+    
+    <section id="references">
+        
+        <p>Los impuestos que se incluyen son: 21% de IVA, 8% de impuesto a los servicios digitales,
+            y un 35% de percepcion de ganancias, y si vivis en CABA O PBA un 2% más de ingresos brutos :)</p>
+        
+        <p class="legales">Advertencia: Los precios pueden ser aproximados, dependiendo impuestos propios de cada provincia </p>
+    </section>
+    
+
+
+    </div>
+
+    <footer>All rights reserved to HilaExaUnicen</footer>
+
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
