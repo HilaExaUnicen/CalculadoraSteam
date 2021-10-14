@@ -9,14 +9,14 @@ document.addEventListener("DOMContentLoaded", function(e){
         
         let spanDOM = document.querySelector("#precioFinal");
 
-    if(inputPrecio > 0){
+    if(((inputPrecio > 0) && (inputPrecio < 50000))){
         sumaImpuestos(inputPrecio, spanDOM);
 
         document.querySelector("#inputPrecio").value = "";
     }
 
     else{
-        alert("Ingrese un importe valido")
+        alert("Ingrese un importe valido");
     }
 
 });
@@ -32,6 +32,10 @@ document.addEventListener("DOMContentLoaded", function(e){
         if(((precio == 69) || (precio == 420))){
             
             document.querySelector("#precioInicial").innerHTML = precio + " nice ";    
+            spanDOM.innerHTML = parseFloat(precio) + parseFloat(resultado);
+        }
+        else if(precio == 420.69){
+            document.querySelector("#precioInicial").innerHTML = precio + " ULTRANICE ";    
             spanDOM.innerHTML = parseFloat(precio) + parseFloat(resultado);
         }
 
