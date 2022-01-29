@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="style.css">
     <title>Calculadora impuestos de steam</title>
 </head>
 <body>
@@ -17,14 +15,39 @@
     
     
     <div class="container">
- 
-        
         <section class="resultado">
-            <h2 class="h2resultado">Ingrese aqui el precio que aparece en steam</h2>
+            <h2 class="h2resultado">Ingresa aqui el precio que aparece en steam y tu provincia</h2>
         
             <form>
-                <p><input id="inputPrecio" type="number" maxlength="6" placeholder="Precio">
-                <button id="boton">Calcular</button></p>
+                <p><input id="inputPrecio" type="number" placeholder="Precio">
+                <select id="selectProvincias">
+                        <option value="null">Ingrese su provincia...</option>
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="CABA">CABA</option>
+                        <option value="Catamarca">Catamarca</option>
+                        <option value="Chaco">Chaco</option>
+                        <option value="Chubut">Chubut</option>
+                        <option value="Cordoba">Cordoba</option>
+                        <option value="Corrientes">Corrientes</option>
+                        <option value="Entre Rios">Entre Rios</option>
+                        <option value="Formosa">Formosa</option>
+                        <option value="Jujuy">Jujuy</option>
+                        <option value="La Pampa">La Pampa</option>
+                        <option value="La Rioja">La Rioja</option>
+                        <option value="Mendoza">Mendoza</option>
+                        <option value="Misiones">Misiones</option>
+                        <option value="Neuquen">Neuquen</option>
+                        <option value="Rio Negro">Rio Negro</option>
+                        <option value="Salta">Salta</option>
+                        <option value="San Juan">San Juan</option>
+                        <option value="San Luis">San Luis</option>
+                        <option value="Santa Cruz">Santa Cruz</option>
+                        <option value="Santa Fe">Santa Fe</option>
+                        <option value="Santiago del Estero">Santiago del Estero</option>
+                        <option value="Tierra del Fuego">Tierra del Fuego</option>
+                        <option value="Tucuman">Tucuman</option>
+                </select>
+                <button class="btn btn-primary" id="boton">Calcular</button></p>
             </form>
         
             <p id="parrafoInicial">Valor Steam: <span id="precioInicial"></span>$</p>
@@ -32,16 +55,18 @@
         </section>
     
         <section id="references">
-            <p>Los impuestos que se incluyen son: 21% de IVA, 8% de impuesto a los servicios digitales,
-            y un 35% de percepcion de ganancias, y si vivis en CABA O PBA un 2% más de ingresos brutos :)</p>
-        
-            <p class="legales">Advertencia: Los precios pueden ser aproximados, dependiendo impuestos propios de cada provincia </p>
+            <section id="detalleImpuestos">
+                
+            </section>
+            
+            <p class="legales">Advertencia: Los precios pueden ser aproximados</p>
         </section>
     </div>
 
-    <footer>All rights reserved to HilaExaUnicen</footer>
+    <footer>HilaExaUnicen | 2022</footer>
 
 
     <script type="text/javascript" src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

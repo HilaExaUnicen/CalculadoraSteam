@@ -1,6 +1,6 @@
 html{
     background: linear-gradient(
-        to right,rgb(7, 7, 77),rgb(37, 37, 59),rgb(47, 47, 49)
+       to right, rgb(2, 2, 46),rgb(37, 37, 129),rgb(41, 41, 92)
     );
 }
 
@@ -14,6 +14,7 @@ header, .container, footer{
     display: flex;
     justify-content: center;
     font-size: 3rem;
+    font-weight: bold;
 }
 
 .resultado{
@@ -27,11 +28,18 @@ header, .container, footer{
     width: 10em;
     font-family: 'Heebo', sans-serif;
     margin-left: 1em;
+    height: 1.3rem;
+}
+
+#selectProvincias{
+    height: 1.6rem;
 }
 
 #boton{
     border-radius: 20px;
-    background-color: rgb(223, 223, 203);
+    background-color: #c6d3e0;
+    width: 6rem;
+    height: 2.5rem;
     padding: 0.5em;
     margin-left: 1em;
 }
@@ -56,8 +64,8 @@ header, .container, footer{
     margin-left: 0.7em;;
 }
 
-.xd{
-    text-decoration: line-through;
+#detalleImpuestos{
+    font-size: 1rem;
 }
 
 footer{
@@ -66,11 +74,11 @@ footer{
     background-color:#0d1527 ;
     padding: 20px;
     font-size: 13px;
-    font-style: italic;
-    margin-top: 6.3em;
+    margin-top: 10.1em;
    
 }
 
 .legales{
-    font-size: 1rem;
+    font-size: 1.2rem;
+    padding-top: 4.9em;
 }
