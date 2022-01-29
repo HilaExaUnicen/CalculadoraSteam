@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function(e){
         switch(provincia){
             case "null":{
                 alert("Ingrese su provincia");
-                document.querySelector("#inputPrecio").value = "";
                 break;
             }
             case "Buenos Aires":{
