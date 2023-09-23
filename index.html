@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,19 +9,19 @@
     <link rel="stylesheet" href="style.css">
     <title>Calculadora impuestos de steam</title>
 </head>
+
 <body>
     <header class="titulo">
         Calculadora de impuestos de Steam!
     </header>
-    
-    
+
+
     <div class="container">
         <section class="resultado">
-            <h2 class="h2resultado">Ingresa aqui el precio que aparece en steam y tu provincia</h2>
-        
+            <h2 class="h2resultado">Ingresa aqui el precio que aparece en Steam, y tu provincia</h2>
             <form>
                 <p><input id="inputPrecio" type="number" placeholder="Precio">
-                <select id="selectProvincias">
+                    <select id="selectProvincias">
                         <option value="null">Ingrese su provincia...</option>
                         <option value="Buenos Aires">Buenos Aires</option>
                         <option value="CABA">CABA</option>
@@ -46,20 +47,26 @@
                         <option value="Santiago del Estero">Santiago del Estero</option>
                         <option value="Tierra del Fuego">Tierra del Fuego</option>
                         <option value="Tucuman">Tucuman</option>
-                </select>
-                <button class="btn btn-primary" id="boton">Calcular</button></p>
+                    </select>
+                    <button class="btn btn-primary" id="boton">Calcular</button>
+                </p>
             </form>
-        
+
             <p id="parrafoInicial">Valor Steam: <span id="precioInicial"></span>$</p>
             <p id="parrafoResultado">El precio con impuestos es de: <span id="precioFinal"></span>$</p>
         </section>
-    
+
         <section id="references">
             <section id="detalleImpuestos">
-                
+
             </section>
-            
-            <p class="legales">Advertencia: Los precios pueden ser aproximados</p>
+
+            <h3>Advertencias</h3>
+            <ul>
+                <li>Los precios pueden ser aproximados</li>
+                <li>Si vas a comprar con una tarjeta con la que ya gastaste mas de 200 U$D, se suma al precio total otro
+                    25%</li>
+            </ul>
         </section>
     </div>
 
@@ -68,4 +75,5 @@
 
     <script type="text/javascript" src="main.js"></script>
 </body>
+
 </html>
