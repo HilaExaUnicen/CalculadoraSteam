@@ -11,14 +11,14 @@ document.addEventListener("DOMContentLoaded", function (e) {
         const precioMinimo = 0;
         const precioMaximo = 100000;
 
-        if (((inputPrecio > precioMinimo) && (inputPrecio < precioMaximo))) {
+        if ((inputPrecio > precioMinimo) && (inputPrecio < precioMaximo)) {
             switch (provincia) {
                 case "null": {
                     alert("Ingrese su provincia");
                     break;
                 }
                 case "Buenos Aires": {
-                    let multiplicadorImpuestos = 0.76;
+                    let multiplicadorImpuestos = 1.02;
                     let nombreImpuestoProvincial = "ARBA RG 38/2019 2%";
                     sumaImpuestos(inputPrecio, spanDOM, multiplicadorImpuestos, nombreImpuestoProvincial);
                     document.querySelector("#inputPrecio").value = "";
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
                     break;
                 }
                 case "CABA": {
-                    let multiplicadorImpuestos = 0.76;
+                    let multiplicadorImpuestos = 1.02;
                     let nombreImpuestoProvincial = "AGIP RG 312/2019 2%";
                     sumaImpuestos(inputPrecio, spanDOM, multiplicadorImpuestos, nombreImpuestoProvincial);
                     document.querySelector("#inputPrecio").value = "";
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
                     break;
                 }
                 case "Cordoba": {
-                    let multiplicadorImpuestos = 0.77;
+                    let multiplicadorImpuestos = 1.03;
                     let nombreImpuestoProvincial = "Rentas de Córdoba Decreto 774/2018 3%";
                     sumaImpuestos(inputPrecio, spanDOM, multiplicadorImpuestos, nombreImpuestoProvincial);
                     document.querySelector("#inputPrecio").value = "";
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
                     break;
                 }
                 case "La Pampa": {
-                    let multiplicadorImpuestos = 0.75;
+                    let multiplicadorImpuestos = 1.01;
                     let nombreImpuestoProvincial = "Rentas de La Pampa RG 14/2019 1% ";
                     sumaImpuestos(inputPrecio, spanDOM, multiplicadorImpuestos, nombreImpuestoProvincial);
                     document.querySelector("#inputPrecio").value = "";
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
                     break;
                 }
                 case "Rio Negro": {
-                    let multiplicadorImpuestos = 0.79;
+                    let multiplicadorImpuestos = 1.05;
                     let nombreImpuestoProvincial = "Rentas de Río Negro RG 808/2020 5%";
                     sumaImpuestos(inputPrecio, spanDOM, multiplicadorImpuestos, nombreImpuestoProvincial);
                     document.querySelector("#inputPrecio").value = "";
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
                     break;
                 }
                 case "Salta": {
-                    let multiplicadorImpuestos = 0.776;
+                    let multiplicadorImpuestos = 1.036;
                     let nombreImpuestoProvincial = "Rentas de Salta RG 34/2018 3,6%";
                     sumaImpuestos(inputPrecio, spanDOM, multiplicadorImpuestos, nombreImpuestoProvincial);
                     document.querySelector("#inputPrecio").value = "";
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
                     break;
                 }
                 case "Chaco": {
-                    let multiplicadorImpuestos = 0.795;
+                    let multiplicadorImpuestos = 1.055;
                     let nombreImpuestoProvincial = "Rentas de Chaco RG 2046/2020 5,5%";
                     sumaImpuestos(inputPrecio, spanDOM, multiplicadorImpuestos, nombreImpuestoProvincial);
                     document.querySelector("#inputPrecio").value = "";
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
                     break;
                 }
                 default: {
-                    let multiplicadorImpuestos = 0.74;
+                    let multiplicadorImpuestos = 1.0;
                     let nombreImpuestoProvincial = "";
                     sumaImpuestos(inputPrecio, spanDOM, multiplicadorImpuestos, nombreImpuestoProvincial);
                     document.querySelector("#inputPrecio").value = "";
